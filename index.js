@@ -19,7 +19,7 @@ client.db = require("quick.db");
 client.on("ready", async () => {
   console.log(`Yeah! Your bot has been deployed! Have fun!`);
   client.user
-    .setActivity(`+help`, { type: "PLAYING" })
+    .setActivity(`${Prefix}help`, { type: "PLAYING" })
     .catch(error => console.log(error));
 });
 
